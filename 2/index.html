@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Abdulrahman Almyman's Portfolio 👨‍💻</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.onload = function () {
+      let currentImageIndex = 0;
+      const images = document.querySelectorAll('.home-img img');
+      const totalImages = images.length;
+      function changeImage() {
+        images[currentImageIndex].style.display = 'none';
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        images[currentImageIndex].style.display = 'block';
+      }
+      images[currentImageIndex].style.display = 'block';
+      setInterval(changeImage, 5500);
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Abdulrahman Almyman</a>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#articles">Articles</a>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="home-img">
+      <img src="proPic/u0.jpg" alt="Photo 1" style="display:none;">
+      <img src="proPic/u1.jpg" alt="Photo 2" style="display:none;">
+      <img src="proPic/u2.png" alt="Photo 3" style="display:none;">
+    </div>
+    <div class="home-content">
+      <h1>Hi, I am <span>Abdulrahman</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p>Driven by curiosity & passion for technology, computing, and artificial intelligence.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/abdulrahmanalmyman/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/PYTHON01100100"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/PYTHON01100100"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/@AbdulrahmanAlmyman"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://drive.google.com/file/d/1K2lDxvyalavo-QJJIgDnzO189A0WtbJC/view?usp=sharing"><i class="fa-regular fa-file"></i></a>
+      </div>
+      <a href="#contact" class="btn">Contact me</a>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>🎓 Education</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <img src="logos/f.jpg" alt="High School Logo" />
+        <div>
+          <h3>High School</h3>
+          <p>Science Track - AlRiyadh School</p>
+          <medium>2016 - 2019</medium>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <img src="logos/kus.jpg" alt="University Logo" />
+        <div>
+          <h3>University</h3>
+          <p>Bachelor of Computer Science - KSU</p>
+          <medium>2019 - 2025</medium>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>💼 Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <img src="logos/sccc.jpg" alt="SCCC Logo" />
+        <div>
+          <h3>Alibaba Cloud Intern</h3>
+          <p>Worked on ECS, VPCs, DNS, and High Availability setups.</p>
+          <medium>2025</medium>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="timeline">
+      <div class="timeline-item right">
+        <img src="logos/yolo.png" alt="YOLO Project" />
+        <div>
+          <h3>AI Sports Analyzer</h3>
+          <p>YOLOv8-based analyzer for athletic performance.</p>
+          <medium>2024</medium>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>📜 Certifications</h2>
+    <div class="timeline">
+      <div class="timeline-item left square">
+        <img src="logos/ACA.png" alt="ACA Logo" />
+        <div>
+          <h3>ACA Cloud Computing</h3>
+          <p>Certified by Alibaba Cloud in ECS, VPC, SLB, and HA design.</p>
+          <medium>Issued: Mar 2025</medium>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>🧠 Skills and Services</h2>
+    <!-- You can change animation duration (e.g. 30s) below -->
+    <div class="skills-loop">
+      <div class="skills-bubbles loop">
+        <span>Python</span><span>Cloud Computing</span><span>Linux</span>
+        <span>Docker</span><span>Machine Learning</span><span>Web Dev</span>
+        <span>MySQL</span><span>CI/CD</span><span>Git</span><span>Java</span>
+      </div>
+    </div>
+  </section>
+
+<!-- Articles -->
+<section id="articles">
+  <h2>📘 Articles</h2>
+  <!-- You can change scrollamount to control speed -->
+  <div class="articles-loop">
+    <marquee behavior="scroll" direction="left" scrollamount="4">
+      <span><a href="https://yourdomain.com/ai-assistant" target="_blank">🔗 How I Built My AI Assistant</a></span>
+      <span><a href="https://yourdomain.com/alibaba-ecs" target="_blank">🔗 Mastering Alibaba Cloud ECS</a></span>
+      <span><a href="https://yourdomain.com/ai-cloud" target="_blank">🔗 AI & Cloud for Beginners</a></span>
+      <span><a href="https://yourdomain.com/web-dev-2025" target="_blank">🔗 Web Dev in 2025</a></span>
+    </marquee>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <p>You can reach me via <a href="mailto:youremail@example.com">email</a> or any of my social media links above.</p>
+  </section>
+
+</body>
+</html>

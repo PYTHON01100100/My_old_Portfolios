@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Abdulrahman Almyman's Portfolio 👨🏻‍💻</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <script>
+        window.onload = function() {
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('.home-img img');  // Select all the images inside the .home-img div
+            const totalImages = images.length;  // Get the total number of images
+    
+            function changeImage() {
+                // Hide the current image
+                images[currentImageIndex].style.display = 'none';
+    
+                // Move to the next image
+                currentImageIndex = (currentImageIndex + 1) % totalImages;
+    
+                // Show the next image
+                images[currentImageIndex].style.display = 'block';
+            }
+    
+            // Initialize by showing the first image
+            images[currentImageIndex].style.display = 'block';
+    
+            // Set the interval to change the image every 5 seconds (5000 ms)
+            setInterval(changeImage, 5500);
+        }
+    </script>
+    
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Abdulrahman Almyman</a>
+
+        <nav>
+            <a href="https://python01100100.github.io/Abdulrahman_Almyman_Portfolio/#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Projects</a>
+            <a href="#" >Articles</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            
+        </nav>
+    </header>
+<section class="home">
+    <div class="home-img">
+        <img src="proPic/u0.jpg" alt="Photo 1" style="display:none;">
+        <img src="proPic/u1.jpg" alt="Photo 2" style="display:none;">
+        <img src="proPic/u2.png" alt="Photo 3" style="display:none;">
+        <img src="proPic/u3.jpg" alt="Photo 4" style="display:none;">
+        <img src="proPic/u4.jpg" alt="Photo 5" style="display:none;">
+        <img src="proPic/u5.jpg" alt="Photo 6" style="display:none;">
+        <img src="proPic/u6.jpg" alt="Photo 7" style="display:none;">
+        <img src="proPic/u7.png" alt="Photo 8" style="display:none;">
+        <img src="proPic/u8.jpg" alt="Photo 9" style="display:none;">
+        <img src="proPic/u9.png" alt="Photo 10" style="display:none;">
+        <img src="proPic/u10.jpg" alt="Photo 11" style="display:none;">
+        <img src="proPic/u11.png" alt="Photo 12" style="display:none;">
+        <img src="proPic/u12.png" alt="Photo 13" style="display:none;">
+        <img src="proPic/u13.jpg" alt="Photo 14" style="display:none;">
+        <img src="proPic/u14.png" alt="Photo 15" style="display:none;">
+        <img src="proPic/u15.jpg" alt="Photo 16" style="display:none;">
+        <img src="proPic/u16.png" alt="Photo 17" style="display:none;">
+        <img src="proPic/u17.jpg" alt="Photo 18" style="display:none;">
+        <img src="proPic/u18.png" alt="Photo 19" style="display:none;">
+        <img src="proPic/u19.png" alt="Photo 20" style="display:none;">
+        <img src="proPic/u20.png" alt="Photo 21" style="display:none;">
+        <img src="proPic/u21.png" alt="Photo 22" style="display:none;">
+        <img src="proPic/u22.jpg" alt="Photo 23" style="display:none;">
+        <img src="proPic/u23.jpg" alt="Photo 24" style="display:none;">
+        <img src="proPic/u24.png" alt="Photo 25" style="display:none;">
+        <img src="proPic/u25.jpg" alt="Photo 26" style="display:none;">
+        <img src="proPic/u26.png" alt="Photo 27" style="display:none;">
+        <img src="proPic/u27.png" alt="Photo 28" style="display:none;">
+        <img src="proPic/u28.png" alt="Photo 29" style="display:none;">
+        <img src="proPic/u29.png" alt="Photo 30" style="display:none;">
+        <img src="proPic/u30.png" alt="Photo 31" style="display:none;">
+        <img src="proPic/u31.png" alt="Photo 32" style="display:none;">
+        <img src="proPic/u32.png" alt="Photo 33" style="display:none;">
+        <img src="proPic/u33.jpg" alt="Photo 34" style="display:none;">
+        <img src="proPic/u34.png" alt="Photo 35" style="display:none;">
+        <img src="proPic/u35.png" alt="Photo 36" style="display:none;">
+      
+
+    </div>
+<!--</section> -->
+
+        
+        <div class="home-content">
+            <h1>Hi, I am <span>Abdulrahman</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>
+            I'm driven by curiosity & passionate about everything around Technology, Computers, & Artificial Intelligence Because of Video Games, & Using Computers. My gateway to that world started with Visual Basic when I was a student at school so I decided to build my career by studying computer science as a major at that time & studying & working for it & I continued on this journey in high school & University with Python, Mysql, Java, Machine Learning & Web Technologies.I'm driven by curiosity & passionate about everything around Technology, Computers, & Artificial Intelligence Because of Video Games, & Using Computers. My gateway to that world started with Visual Basic when I was a student at school so I decided to build my career by studying computer science as a major at that time & studying & working for it & I continued on this journey in high school & University with Python, Mysql, Java, Machine Learning & Web Technologies.
+</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abdulrahmanalmyman/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/PYTHON01100100"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/PYTHON01100100"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@AbdulrahmanAlmyman"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://drive.google.com/file/d/1VQu_VTC08uFrbpxZOsnDXnwm0OmJBbbj/view?usp=sharing"><i class="fa-regular fa-file"></i></a>
+                
+            </div>
+            <a href="#" class="btn">Contact me</a>
+        </div>
+    </section>
+</body>
+</html>
